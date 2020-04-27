@@ -643,9 +643,9 @@ uint8_t CC1100::receive(void)
     while(marcstate != 0x0D)              //0x0D = RX
     {
         marcstate = (spi_read_register(MARCSTATE) & 0x1F); //read out state of cc1100 to be sure in RX
-        //printf("marcstate_rx: 0x%02X\r", marcstate);
+        printf("marcstate_rx: 0x%02X\r", marcstate);
     }
-    //printf("\r\n");
+    printf("\r\n");
     delayMicroseconds(100);
     return TRUE;
 }
@@ -829,6 +829,7 @@ uint8_t CC1100::packet_available()
 {
     if(digitalRead(GDO2) == TRUE)                           //if RF package received
     {
+        printf("digitalRead(GDO2) == TRUE");
         if(spi_read_register(IOCFG2) == 0x06)               //if sync word detect mode is used
         {
             while(digitalRead(GDO2) == TRUE){               //wait till sync word is fully received
@@ -836,8 +837,8 @@ uint8_t CC1100::packet_available()
             }                                                  //for sync word receive
         }
 
-        if(debug_level > 0){
-             //printf("Pkt->:\r\n");
+        if(true){
+             printf("Pkt->:\r\n");
         }
 
         return TRUE;

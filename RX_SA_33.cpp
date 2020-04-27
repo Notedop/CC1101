@@ -159,6 +159,7 @@ int main(int argc, char *argv[]) {
 
         if (cc1100.packet_available())         //checks if a packed is available
         {
+            printf("packet available");
             cc1100.get_payload(Rx_fifo, pktlen, rx_addr, sender, rssi_dbm, lqi); //stores the payload data to Rx_fifo
         }
     }
