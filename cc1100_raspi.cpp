@@ -326,28 +326,28 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x91,  // SYNC0         Sync Word, Low Byte
         0x09,  // PKTLEN        Packet Length
         0x04,  // PKTCTRL1      Packet Automation Control
-        0x44,  // PKTCTRL0      Packet Automation Control
+        0x04,  // PKTCTRL0      Packet Automation Control
         0x00,  // ADDR          Device Address
-        0x01,  // CHANNR        Channel Number
+        0x00,  // CHANNR        Channel Number
         0x06,  // FSCTRL1       Frequency Synthesizer Control
         0x00,  // FSCTRL0       Frequency Synthesizer Control
         0x10,  // FREQ2         Frequency Control Word, High Byte
-        0xB0,  // FREQ1         Frequency Control Word, Middle Byte
-        0x3F,  // FREQ0         Frequency Control Word, Low Byte
+        0xB1,  // FREQ1         Frequency Control Word, Middle Byte
+        0x3B,  // FREQ0         Frequency Control Word, Low Byte
         0xF5,  // MDMCFG4       Modem Configuration
-        0xC4,  // MDMCFG3       Modem Configuration
+        0x83,  // MDMCFG3       Modem Configuration
         0x30,  // MDMCFG2       Modem Configuration
-        0x00,  // MDMCFG1       Modem Configuration
+        0x22,  // MDMCFG1       Modem Configuration
         0xF8,  // MDMCFG0       Modem Configuration
         0x15,  // DEVIATN       Modem Deviation Setting
         0x07,  // MCSM2         Main Radio Control State Machine Configuration
         0x30,  // MCSM1         Main Radio Control State Machine Configuration
         0x18,  // MCSM0         Main Radio Control State Machine Configuration
-        0x16,  // FOCCFG        Frequency Offset Compensation Configuration
+        0x14,  // FOCCFG        Frequency Offset Compensation Configuration
         0x6C,  // BSCFG         Bit Synchronization Configuration
         0x03,  // AGCCTRL2      AGC Control
         0x40,  // AGCCTRL1      AGC Control
-        0x91,  // AGCCTRL0      AGC Control
+        0x92,  // AGCCTRL0      AGC Control
         0x87,  // WOREVT1       High Byte Event0 Timeout
         0x6B,  // WOREVT0       Low Byte Event0 Timeout
         0xFB,  // WORCTRL       Wake On Radio Control
