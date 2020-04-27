@@ -326,16 +326,16 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x91,  // SYNC0         Sync Word, Low Byte
         0xFF,  // PKTLEN        Packet Length
         0x04,  // PKTCTRL1      Packet Automation Control
-        0x05,  // PKTCTRL0      Packet Automation Control
+        0x45,  // PKTCTRL0      Packet Automation Control
         0x00,  // ADDR          Device Address
-        0x00,  // CHANNR        Channel Number
+        0x01,  // CHANNR        Channel Number
         0x06,  // FSCTRL1       Frequency Synthesizer Control
         0x00,  // FSCTRL0       Frequency Synthesizer Control
         0x10,  // FREQ2         Frequency Control Word, High Byte
         0xB0,  // FREQ1         Frequency Control Word, Middle Byte
         0x3F,  // FREQ0         Frequency Control Word, Low Byte
-        0xF5,  // MDMCFG4       Modem Configuration
-        0x83,  // MDMCFG3       Modem Configuration
+        0xF1,  // MDMCFG4       Modem Configuration
+        0xCF,  // MDMCFG3       Modem Configuration
         0x33,  // MDMCFG2       Modem Configuration
         0x00,  // MDMCFG1       Modem Configuration
         0xF8,  // MDMCFG0       Modem Configuration
@@ -365,6 +365,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x81,  // TEST2         Various Test Settings
         0x35,  // TEST1         Various Test Settings
         0x09,  // TEST0         Various Test Settings
+
 };
                //Patable index: -30  -20- -15  -10   0    5    7    10 dBm
 static uint8_t patable_power_315[8] = {0x17,0x1D,0x26,0x69,0x51,0x86,0xCC,0xC3};
