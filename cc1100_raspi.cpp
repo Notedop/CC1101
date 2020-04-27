@@ -334,9 +334,9 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x10,  // FREQ2         Frequency Control Word, High Byte
         0xB0,  // FREQ1         Frequency Control Word, Middle Byte
         0x3F,  // FREQ0         Frequency Control Word, Low Byte
-        0xF5,  // MDMCFG4       Modem Configuration
-        0x43,  // MDMCFG3       Modem Configuration
-        0x10,  // MDMCFG2       Modem Configuration
+        0xF4,  // MDMCFG4       Modem Configuration
+        0xC4,  // MDMCFG3       Modem Configuration
+        0x30,  // MDMCFG2       Modem Configuration
         0x00,  // MDMCFG1       Modem Configuration
         0xF8,  // MDMCFG0       Modem Configuration
         0x15,  // DEVIATN       Modem Deviation Setting
@@ -352,7 +352,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x6B,  // WOREVT0       Low Byte Event0 Timeout
         0xFB,  // WORCTRL       Wake On Radio Control
         0x56,  // FREND1        Front End RX Configuration
-        0x10,  // FREND0        Front End TX Configuration
+        0x11,  // FREND0        Front End TX Configuration
         0xE9,  // FSCAL3        Frequency Synthesizer Calibration
         0x2A,  // FSCAL2        Frequency Synthesizer Calibration
         0x00,  // FSCAL1        Frequency Synthesizer Calibration
@@ -365,6 +365,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x81,  // TEST2         Various Test Settings
         0x35,  // TEST1         Various Test Settings
         0x09,  // TEST0         Various Test Settings
+
 
 };
                //Patable index: -30  -20- -15  -10   0    5    7    10 dBm
