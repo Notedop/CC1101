@@ -367,7 +367,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x09,  // TEST0         Various Test Settings
 };
 static uint8_t cc1100_OOK_SA_33_RX[CFG_REGISTER] = {
-        0x29,  // IOCFG2        GDO2 Output Pin Configuration
+        0x0D,  // IOCFG2        GDO2 Output Pin Configuration
         0x2E,  // IOCFG1        GDO1 Output Pin Configuration
         0x06,  // IOCFG0        GDO0 Output Pin Configuration
         0x47,  // FIFOTHR       RX FIFO and TX FIFO Thresholds
@@ -828,7 +828,6 @@ void CC1100::sent_acknowledge(uint8_t my_addr, uint8_t tx_addr)
 //----------------------[check if Packet is received]---------------------------
 uint8_t CC1100::packet_available()
 {
-    printf("packet_available?");
     if(digitalRead(GDO2) == TRUE)                           //if RF package received
     {
         printf("digitalRead(GDO2) == TRUE");
