@@ -345,8 +345,8 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x18,  // MCSM0         Main Radio Control State Machine Configuration
         0x14,  // FOCCFG        Frequency Offset Compensation Configuration
         0x6C,  // BSCFG         Bit Synchronization Configuration
-        0x03,  // AGCCTRL2      AGC Control
-        0x40,  // AGCCTRL1      AGC Control
+        0x07,  // AGCCTRL2      AGC Control
+        0x00,  // AGCCTRL1      AGC Control
         0x92,  // AGCCTRL0      AGC Control
         0x87,  // WOREVT1       High Byte Event0 Timeout
         0x6B,  // WOREVT0       Low Byte Event0 Timeout
