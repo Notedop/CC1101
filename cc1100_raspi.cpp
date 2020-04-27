@@ -324,9 +324,9 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x47,  // FIFOTHR       RX FIFO and TX FIFO Thresholds
         0xD3,  // SYNC1         Sync Word, High Byte
         0x91,  // SYNC0         Sync Word, Low Byte
-        0xFF,  // PKTLEN        Packet Length
+        0x09,  // PKTLEN        Packet Length
         0x04,  // PKTCTRL1      Packet Automation Control
-        0x45,  // PKTCTRL0      Packet Automation Control
+        0x04,  // PKTCTRL0      Packet Automation Control
         0x00,  // ADDR          Device Address
         0x01,  // CHANNR        Channel Number
         0x06,  // FSCTRL1       Frequency Synthesizer Control
@@ -334,9 +334,9 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x10,  // FREQ2         Frequency Control Word, High Byte
         0xB0,  // FREQ1         Frequency Control Word, Middle Byte
         0x3F,  // FREQ0         Frequency Control Word, Low Byte
-        0xF1,  // MDMCFG4       Modem Configuration
-        0xCF,  // MDMCFG3       Modem Configuration
-        0x33,  // MDMCFG2       Modem Configuration
+        0xF5,  // MDMCFG4       Modem Configuration
+        0x43,  // MDMCFG3       Modem Configuration
+        0x10,  // MDMCFG2       Modem Configuration
         0x00,  // MDMCFG1       Modem Configuration
         0xF8,  // MDMCFG0       Modem Configuration
         0x15,  // DEVIATN       Modem Deviation Setting
@@ -352,7 +352,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x6B,  // WOREVT0       Low Byte Event0 Timeout
         0xFB,  // WORCTRL       Wake On Radio Control
         0x56,  // FREND1        Front End RX Configuration
-        0x11,  // FREND0        Front End TX Configuration
+        0x10,  // FREND0        Front End TX Configuration
         0xE9,  // FSCAL3        Frequency Synthesizer Calibration
         0x2A,  // FSCAL2        Frequency Synthesizer Calibration
         0x00,  // FSCAL1        Frequency Synthesizer Calibration
