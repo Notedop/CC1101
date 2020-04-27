@@ -827,6 +827,7 @@ void CC1100::sent_acknowledge(uint8_t my_addr, uint8_t tx_addr)
 //----------------------[check if Packet is received]---------------------------
 uint8_t CC1100::packet_available()
 {
+    printf("packet_available?");
     if(digitalRead(GDO2) == TRUE)                           //if RF package received
     {
         printf("digitalRead(GDO2) == TRUE");
