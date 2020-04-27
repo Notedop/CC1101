@@ -375,7 +375,7 @@ static uint8_t cc1100_OOK_SA_33_RX[CFG_REGISTER] = {
         0x91,  // SYNC0         Sync Word, Low Byte
         0x09,  // PKTLEN        Packet Length
         0x04,  // PKTCTRL1      Packet Automation Control
-        0x04,  // PKTCTRL0      Packet Automation Control
+        0x32,  // PKTCTRL0      Packet Automation Control
         0x00,  // ADDR          Device Address
         0x00,  // CHANNR        Channel Number
         0x06,  // FSCTRL1       Frequency Synthesizer Control
