@@ -326,7 +326,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x91,  // SYNC0         Sync Word, Low Byte
         0x09,  // PKTLEN        Packet Length
         0x04,  // PKTCTRL1      Packet Automation Control
-        0x05,  // PKTCTRL0      Packet Automation Control
+        0x04,  // PKTCTRL0      Packet Automation Control
         0x00,  // ADDR          Device Address
         0x00,  // CHANNR        Channel Number
         0x06,  // FSCTRL1       Frequency Synthesizer Control
@@ -336,14 +336,14 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x3B,  // FREQ0         Frequency Control Word, Low Byte
         0xF5,  // MDMCFG4       Modem Configuration
         0x83,  // MDMCFG3       Modem Configuration
-        0x10,  // MDMCFG2       Modem Configuration
-        0x00,  // MDMCFG1       Modem Configuration
+        0x30,  // MDMCFG2       Modem Configuration
+        0x22,  // MDMCFG1       Modem Configuration
         0xF8,  // MDMCFG0       Modem Configuration
         0x15,  // DEVIATN       Modem Deviation Setting
         0x07,  // MCSM2         Main Radio Control State Machine Configuration
         0x30,  // MCSM1         Main Radio Control State Machine Configuration
         0x18,  // MCSM0         Main Radio Control State Machine Configuration
-        0x16,  // FOCCFG        Frequency Offset Compensation Configuration
+        0x14,  // FOCCFG        Frequency Offset Compensation Configuration
         0x6C,  // BSCFG         Bit Synchronization Configuration
         0x07,  // AGCCTRL2      AGC Control
         0x00,  // AGCCTRL1      AGC Control
@@ -352,7 +352,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x6B,  // WOREVT0       Low Byte Event0 Timeout
         0xFB,  // WORCTRL       Wake On Radio Control
         0x56,  // FREND1        Front End RX Configuration
-        0x30,  // FREND0        Front End TX Configuration
+        0x11,  // FREND0        Front End TX Configuration
         0xE9,  // FSCAL3        Frequency Synthesizer Calibration
         0x2A,  // FSCAL2        Frequency Synthesizer Calibration
         0x00,  // FSCAL1        Frequency Synthesizer Calibration
@@ -365,11 +365,10 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x81,  // TEST2         Various Test Settings
         0x35,  // TEST1         Various Test Settings
         0x09,  // TEST0         Various Test Settings
-
 };
                //Patable index: -30  -20- -15  -10   0    5    7    10 dBm
 static uint8_t patable_power_315[8] = {0x17,0x1D,0x26,0x69,0x51,0x86,0xCC,0xC3};
-static uint8_t patable_power_433[8] = {0x00,0xC0,0x06,0x3A,0x51,0x85,0xC8,0xC0};
+static uint8_t patable_power_433[8] = {0x6C,0x1C,0x06,0x3A,0x51,0x85,0xC8,0xC0};
 static uint8_t patable_power_868[8] = {0x03,0x17,0x1D,0x26,0x50,0x86,0xCD,0xC0};
 static uint8_t patable_power_915[8] = {0x0B,0x1B,0x6D,0x67,0x50,0x85,0xC9,0xC1};
 //static uint8_t patable_power_2430[8] = {0x44,0x84,0x46,0x55,0xC6,0x6E,0x9A,0xFE};
