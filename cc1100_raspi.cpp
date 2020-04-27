@@ -352,7 +352,7 @@ static uint8_t cc1100_OOK_SA_33[CFG_REGISTER] = {
         0x6B,  // WOREVT0       Low Byte Event0 Timeout
         0xFB,  // WORCTRL       Wake On Radio Control
         0x56,  // FREND1        Front End RX Configuration
-        0x30,  // FREND0        Front End TX Configuration
+        0xF0,  // FREND0        Front End TX Configuration
         0xE9,  // FSCAL3        Frequency Synthesizer Calibration
         0x2A,  // FSCAL2        Frequency Synthesizer Calibration
         0x00,  // FSCAL1        Frequency Synthesizer Calibration
